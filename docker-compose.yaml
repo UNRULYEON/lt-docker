@@ -1,0 +1,7 @@
+version: "3.8"
+
+services:
+  lt-docker:
+    image: lt-docker
+    ports:
+      - 5000:5000
