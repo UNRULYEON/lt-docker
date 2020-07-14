@@ -11,6 +11,10 @@ RUN yarn
 # Add global serve package to run CMD
 RUN yarn global add serve
 
+# Copying the whole project is not efficient. By splitting the COPY command in two,
+# we can utilize the cache when building the image. Think about your layers!
+# COPY . . 
+
 # Copy src directory from build context to working directory in image
 COPY src src
 # Copy public directory from build context to working directory in image
