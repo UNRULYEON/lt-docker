@@ -2,6 +2,18 @@
 
 Example app taken from: [https://github.com/gabrielsanttana/react-todolist](https://github.com/gabrielsanttana/react-todolist)
 
+## Build image
+
+```bash
+docker build -t lt-docker -f Dockerfile .
+```
+
+## Run container
+
+```bash
+docker run -it --rm -p 5000:5000 lt-docker
+```
+
 ---
 
 # <div align="center">📋 React To-Do List</div>
